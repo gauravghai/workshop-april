@@ -1,6 +1,22 @@
-* {
-    box-sizing: border-box;
+body {
+    background: black !important;
 }
-.nav-inner {
-    background: red;
+.hero {
+    height: 100vh;
+    overflow: hidden;
+}
+.hero img {
+    max-width: 100%;
+    width: 100%;
+}
+.hero .inner-text {
+    position: relative;
+    left: -50px;
+    color: white;
+    background-color: rgb(23, 23, 31);
+}
+.hero .inner-text .sub-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
