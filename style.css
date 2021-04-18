@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 body {
     background: black !important;
+    font-family: 'Sen', sans-serif !important;
+}
+h1 {
+    font-size: 70px !important;
+}
+.navbar-section {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .hero {
     height: 100vh;
@@ -19,4 +29,28 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
+    position: relative;
+    left: -80px;
+}
+.hero .sub-head {
+    font-size: 18px;
+}
+.custom-nav a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+.contact-highlight {
+    background: #5221e6;
+}
+.work .sub-head {
+    font-size: 6em;
+}
+.work .sub-head-1 {
+    font-size: 24px;
+}
+.work h2 {
+    font-size: 50px;
+}
+.green-color {
+    color: #3cc74e;
 }
