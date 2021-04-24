@@ -54,3 +54,30 @@ h1 {
 .green-color {
     color: #3cc74e;
 }
+.article {
+    height: 80vh;
+    overflow: hidden;
+}
+.article img {
+    position: relative;
+    top: -10em;
+}
+.article .d-flex div:first-child {
+    background: #fff3e4;
+}
+.article .custom-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid;
+    padding: 10px;
+}
+.article h2, .skillset h2 {
+    font-size: 4em;
+}
+.article p, .skillset p {
+    font-size: 18px;
+    opacity: 0.6;
+}
+.slider .d-flex div {
+    border: 1px solid;
+}
