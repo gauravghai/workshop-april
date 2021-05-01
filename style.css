@@ -82,3 +82,23 @@ h1 {
 .slider .d-flex div {
     border: 1px solid;
 }
+
+@media (max-width: 425px) {
+    .hero .inner-text, .hero .inner-text .sub-inner {
+        left: auto;
+    }
+    .hero {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    h1 {
+        font-size: 40px !important;
+    }
+    .article img {
+        top: auto;
+    }
+    .article {
+        height: auto;
+    }
+}
+  
