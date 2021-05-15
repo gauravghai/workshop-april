@@ -79,7 +79,7 @@ h1 {
     font-size: 18px;
     opacity: 0.6;
 }
-.slider .d-flex div {
+.slider .d-flex div:not(:last-child) {
     border: 1px solid;
 }
 

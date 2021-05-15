@@ -1,187 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="Html Hints provides 100% tested & hand coded tutorials for beginners & advanced in practical examples. Web Development tips, programming tricks and more!">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 <body>
-  <div class="navbar-section">
-    <nav class="navbar navbar-expand-lg custom-nav p-0">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <h1>Hi</h1>
+<h1>Hi</h1>
+<p id="msg" class="test "></p>
+
+<form action="" onsubmit="return false">
+        <input type="text" name="" id="name">
+        <button id="submit">
+                submit
         </button>
-        <div class="collapse navbar-collapse px-5" id="navbarNav">
-          <ul class="navbar-nav ms-auto p-0">
-            <li class="nav-item py-4">
-              <a class="px-3 active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item py-4">
-              <a class="px-3" href="#">Features</a>
-            </li>
-            <li class="nav-item py-4 contact-highlight">
-              <a class="px-3" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+</form>
+<script>
+  var name = 'Gaurav';
+  var age = '20';
+  var graduated = true;
+  var married;
+  var kids = null;
+  for(var i = 1; i <= 5; i++) {
+    if(i == 2){
+      continue;
+    }
+    console.log(1);
+  }
+  // let i = 2;
+  // do {
+  //   console.log(i);
+  //   i++;
+  // } while (i <= 1);
+  // while (i <= 1) {
+  //   console.log(i);
+  //   i++;
+  // }
+  var test = {
+    name : 'd',
+    age : '18'
+  };
+  // test['petName'] = 'gayrav';
+  // console.log(test['petName']);
+  // setTimeout(() => {
+  //   console.log(1);
+  // }, 1000);
 
-      <!-- 1st section -->
-    <div class="d-flex hero">
-        <div class="col-md-6 col-12">
-            <img src="./images/hero.jpeg" alt="">
-        </div>
-        <div class="col-md-6 col-12 inner-text">
-            <div class="sub-inner px-md-auto px-3 pt-md-auto pt-4">
-                <div>
-                    <h1><strong>I'm Your Name. <br> A UI Developer <br> based in India.</strong></h1>
-                    <p class="sub-head">I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
-                </div>
-            </div>
-        </div>  
-    </div>
-    <div class="container py-5 work px-md-auto px-3">
-        <p class="m-0" style="color: #8491a0">WORK EXPERIENCE</p>
-        <h2 class="text-white col-md-7 col-12"><strong>Companies I have worked for in the past.</strong></h2>
-        <div class="d-flex flex-wrap">
-            <div class="col-md-4 col-12">
-                <p class="sub-head m-0" style="color: #8491a0;">01</p>
-                <p class="text-white sub-head-1 col-7"><span class="green-color">Google</span>, Interaction Designer</p>
-                <p class="text-white col-8">I currently am the lead designer on the interaction design team for Google Play.</p>
-            </div>
-            <div class="col-md-4 col-12">
-                <p class="sub-head m-0" style="color: #8491a0;">02</p>
-                <p class="text-white sub-head-1 col-7"><span style="color: #609bff">Facebook</span>, Product Designer</p>
-                <p class="text-white col-8">I currently am the lead designer on the interaction design team for Google Play.</p>
-            </div>
-            <div class="col-md-4 col-12">
-                <p class="sub-head m-0" style="color: #8491a0;">03</p>
-                <p class="text-white sub-head-1 col-7"><span style="color: #e95d90;">Dribbble</span>, Graphic Designer</p>
-                <p class="text-white col-8">I currently am the lead designer on the interaction design team for Google Play.</p>
-            </div>
-        </div>
-    </div>
+  // localStorage.setItem('name', 'gaurav');
+  // console.log(localStorage.getItem('name'))
 
-    <div class="article">
-      <div class="d-flex flex-wrap">
-        <div class="col-md-6 col-12 d-flex flex-wrap">
-          <div class="col-12 pt-md-5 pt-0 mt-md-5 mt-2 px-md-5 px-2">
-            <h2><strong>Philosophy & values</strong></h2>
-            <p>I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.</p>
-          </div>
-          <div class="col-12 px-md-5 px-2 pb-2">
-            <button class="custom-btn">More about me</button>
-          </div>
-        </div>
-        <div class="col-md-6 col-12">
-          <img src="./images/article.jpg" alt="" class="w-100">
-        </div>
-      </div>
-    </div>
+  myFunction = (a, b) =>  {
+  console.log(a * b)
+};
+myFunction(4, 3);
+let foo = 1;
+ foo = 2;
 
-    <div class="skillset container py-md-5 py-2 px-md-auto px-3">
-      <div class="d-flex flex-wrap pt-5">
-        <div class="col-md-4 col-12">
-          <h2 class="text-white"><strong>Skillset</strong></h2>
-          <p class="text-white col-10">With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
-        </div>
-        <div class="col-md-8 col-12 d-flex flex-wrap">
-          <div class="col-md-6 col-12">
-            <img src="./images/skill1.svg" alt="">
-            <h4 class="text-white pt-4"><strong>Product Design</strong></h4>
-            <p class="text-white col-10">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-          </div>
-          <div class="col-md-6 col-12">
-            <img src="./images/skill1.svg" alt="">
-            <h4 class="text-white pt-4"><strong>Product Design</strong></h4>
-            <p class="text-white col-10">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-          </div>
-          <div class="col-md-6 col-12">
-            <img src="./images/skill1.svg" alt="">
-            <h4 class="text-white pt-4"><strong>Product Design</strong></h4>
-            <p class="text-white col-10">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-          </div>
-          <div class="col-md-6 col-12">
-            <img src="./images/skill1.svg" alt="">
-            <h4 class="text-white pt-4"><strong>Product Design</strong></h4>
-            <p class="text-white col-10">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+if(foo){
 
-    <div class="slider py-5">
-      <div class="d-flex">
-        <div class="col-3 text-center py-5">
-          <img src="./images/slider.svg" class="" alt="">
-        </div>
-        <div class="col-3 text-center py-5">
-          <img src="./images/slider.svg" class="" alt="">
-        </div>
-        <div class="col-3 text-center py-5">
-          <img src="./images/slider.svg" class="" alt="">
-        </div>
-        <div class="col-3 text-center py-5">
-          <img src="./images/slider.svg" class="" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div class="contact container py-md-5 py-2">
-      <div class="d-flex flex-wrap">
-        <div class="col-md-6 col-12">
-          <h2 class="text-white"><strong>Philosophy & values</strong></h2>
-          <p class="text-white col-10">Now that you know a lot about me, let me know if you are interested to work with me.</p>
-        </div>
-        <div class="col-md-6 col-12 pt-md-auto pt-3">
-          <form onsubmit="return false">
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label text-white">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
-              <p class="text-white"><small id="name_error_msg"></small></p>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Your Email">
-            </div>
-            <div class="form-group mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label text-white">Example textarea</label>
-              <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary col-12" onclick="test()">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      function test() {
-        let name = document.getElementById('name').value;
-        let email = document.getElementById('email').value;
-        let message = document.getElementById('message').value;
-        document.getElementById('name_error_msg').innerText = '';
-        if(name == ''){
-          document.getElementById('name_error_msg').innerText = 'Please fill name field';
-          document.getElementById('name_error_msg').classList.add("mystyle");
-          document.getElementById('name_error_msg').style.color = "red";
-        } else if(email == '') {
-          alert('Please fill email field');
-        } else if(message == '') {
-          alert('Please fill message field');
-        } else {
-          alert('Form Submitted');
-        }
-      }
-    </script>
-
-
+  
+let foo = 2;
+}
+document.getElementById('msg').innerText = 'add';
+document.getElementById('msg').style.color = 'red';
+document.getElementById('msg').addEventListener('click', function(){
+  alert(1);
+});
+</script>
 </body>
 </html>
